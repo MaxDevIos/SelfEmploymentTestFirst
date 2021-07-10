@@ -33,7 +33,10 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <state key="normal" title="Show Text"/>
+                                <state key="normal" title="Show Greeting"/>
+                                <connections>
+                                    <action selector="showTextButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="dqu-vP-jAE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -46,6 +49,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Oib-5F-cB5" secondAttribute="bottom" constant="80" id="n4m-XB-Wig"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloUserLabel" destination="Z6G-c2-d8k" id="pdO-sX-0wF"/>
+                        <outlet property="showTextButton" destination="Oib-5F-cB5" id="hXm-8E-nxR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
